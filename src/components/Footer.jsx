@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box, Typography, Link as MuiLink } from '@mui/material';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import { Box, Typography } from '@mui/material';
 
 const Footer = () => (
   <Box
@@ -16,17 +15,8 @@ const Footer = () => (
     }}
   >
     <Typography variant="body2" sx={{ display: 'inline', mr: 1 }}>
-      © {new Date().getFullYear()} CryptoAnalyzer React
+      © {new Date().getFullYear()} CryptoAnalyzer
     </Typography>
-    <MuiLink
-      href="https://github.com/Julien-Sbth/CryptoAnalyzer"
-      target="_blank"
-      rel="noopener"
-      underline="none"
-      sx={{ color: 'primary.main', verticalAlign: 'middle' }}
-    >
-      <GitHubIcon fontSize="small" sx={{ mb: '-2px' }} />
-    </MuiLink>
   </Box>
 );
 

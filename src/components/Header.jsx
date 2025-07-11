@@ -1,6 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Box, IconButton, Avatar, Link as MuiLink } from '@mui/material';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import { AppBar, Toolbar, Typography, Box, Avatar } from '@mui/material';
 
 const logoUrl = 'https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=029';
 
@@ -15,7 +14,7 @@ const Header = () => (
       boxShadow: '0 2px 16px 0 #00e1ff22',
     }}
   >
-    <Toolbar sx={{ justifyContent: 'space-between' }}>
+    <Toolbar sx={{ justifyContent: 'flex-start' }}>
       <Box display="flex" alignItems="center">
         <Avatar src={logoUrl} alt="Crypto Logo" sx={{ width: 40, height: 40, mr: 2 }} />
         <Typography
@@ -30,17 +29,6 @@ const Header = () => (
           CryptoAnalyzer
         </Typography>
       </Box>
-      <MuiLink
-        href="https://github.com/Julien-Sbth/CryptoAnalyzer"
-        target="_blank"
-        rel="noopener"
-        underline="none"
-        sx={{ color: 'primary.main' }}
-      >
-        <IconButton color="inherit">
-          <GitHubIcon fontSize="large" />
-        </IconButton>
-      </MuiLink>
     </Toolbar>
   </AppBar>
 );
